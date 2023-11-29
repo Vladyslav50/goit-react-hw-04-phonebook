@@ -14,7 +14,7 @@ export function ContactForm({ addContact, globalContacts }) {
         setName(value);
         break;
       case 'number':
-        setName(value);
+        setNumber(value);
         break;
 
       default:
