@@ -17,14 +17,14 @@ export function App() {
   );
   const [filter, setFilter] = useState('');
 
-  useEffect(() => {
-    const localContacts = window.localStorage.getItem('contacts');
-    const parsedContacts = JSON.parse(localContacts);
+  // useEffect(() => {
+  //   const localContacts = window.localStorage.getItem('contacts');
+  //   const parsedContacts = JSON.parse(localContacts);
 
-    if (parsedContacts) {
-      setContacts(parsedContacts);
-    }
-  }, []);
+  //   if (parsedContacts) {
+  //     setContacts(parsedContacts);
+  //   }
+  // }, []);
 
   useEffect(() => {
     window.localStorage.setItem('contacts', JSON.stringify(contacts));
